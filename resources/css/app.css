@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container{
+   @apply grid 
+   grid-cols-3 
+   space-x-2 
+   relative
+   ml-1 
+   pr-2 
+   mt-3 h-64
+}
+
+.card{
+   @apply  bg-gray-700 border
+    rounded-md 
+    border-gray-800 
+    h-64 overflow-hidden
+    mt-3 shadow-lg
+    shadow-yellow-300 relative   
+} 
+
+.card-title{
+   @apply p-3 
+   font-bold border-b
+   border-b-amber-300 
+    mt-1  text-white
+}
+.card-content{
+   @apply p-3 text-white mt-1
+}
+
+.delete{
+   @apply text-yellow-300 
+   absolute
+   bottom-0
+   border 
+   border-gray-400 
+   bg-gray-500 
+   p-1 
+   rounded 
+   right-0 
+   text-xs 
+   shadow-sm 
+   shadow-yellow-400
+}
+
+.add-more{
+   @apply bg-white 
+   w-full 
+   h-full 
+   relative 
+   hover:bg-amber-200
+}
+
+.add-more-button{
+   @apply absolute 
+   bottom-20 
+   top-16 
+   left-52
+}
+
+.add-more-border{
+   @apply bg-blue-800
+}
+
+.upcoming-cards{
+   @apply  text-2xl 
+   border 
+   rounded-lg  
+   border-black
+   overflow-hidden
+}
+
+.content-display-block{
+ @apply   upcoming-cards 
+ bg-gray-700 
+ shadow-2xl 
+ hover:bg-gray-800 
+ shadow-gray-950
+ overflow-y-auto  scrollbar-corner-blue-400 scrollbar-thin 
+}
+
+.content-title{
+   @apply m-3 
+   text-3xl 
+   text-white
+}
+
+.add-tasks{
+   @apply mt-2 mr-6 ml-2 
+   bg-gray-300 
+   p-5 
+   border 
+   border-black 
+   rounded-lg 
+   hover:bg-gray-400 
+   shadow-md 
+   shadow-yellow-400 
+   relative
+
+}
+
+.add-task-link{
+   @apply flex space-x-3 justify-start
+}
+.add-task-text{
+   @apply absolute left-10 top-4
+}
+
+.content-list{
+   @apply relative flex mt-2 mr-6 ml-16 pl-5 
+   space-x-4 
+   bg-gray-300 
+   p-1 border 
+   border-black 
+   hover:bg-gray-400  
+   shadow-md 
+   shadow-yellow-400  
+   rounded-lg relative 
+ 
+}
+
+.add-content-link {
+   @apply space-x-2
+   
+
+}
+
+.add-content-content{
+   @apply  left-10 bottom-0
+   overflow-y-scroll
+}
